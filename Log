@@ -1,0 +1,186 @@
+Time
+#
+Log Message
+10.4s	1	[IPKernelApp] WARNING | Error in loading extension: bq_stats
+10.4s	2	Check your config files in /root/.ipython/profile_default
+10.4s	3	Traceback (most recent call last):
+10.4s	4	  File "/opt/conda/lib/python3.10/site-packages/IPython/core/shellapp.py", line 282, in init_extensions
+10.4s	5	    self.shell.extension_manager.load_extension(ext)
+10.4s	6	  File "/opt/conda/lib/python3.10/site-packages/IPython/core/extensions.py", line 76, in load_extension
+10.4s	7	    return self._load_extension(module_str)
+10.4s	8	  File "/opt/conda/lib/python3.10/site-packages/IPython/core/extensions.py", line 91, in _load_extension
+10.4s	9	    mod = import_module(module_str)
+10.4s	10	  File "/opt/conda/lib/python3.10/importlib/__init__.py", line 126, in import_module
+10.4s	11	    return _bootstrap._gcd_import(name[level:], package, level)
+10.4s	12	  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+10.4s	13	  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+10.4s	14	  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+10.4s	15	ModuleNotFoundError: No module named 'bq_stats'
+16.4s	16	<class 'pandas.core.frame.DataFrame'>
+16.4s	17	RangeIndex: 336776 entries, 0 to 336775
+16.4s	18	Data columns (total 21 columns):
+16.4s	19	 #   Column          Non-Null Count   Dtype  
+16.4s	20	---  ------          --------------   -----  
+16.4s	21	 0   id              336776 non-null  int64  
+16.4s	22	 1   year            336776 non-null  int64  
+16.4s	23	 2   month           336776 non-null  int64  
+16.4s	24	 3   day             336776 non-null  int64  
+16.4s	25	 4   dep_time        328521 non-null  float64
+16.4s	26	 5   sched_dep_time  336776 non-null  int64  
+16.4s	27	 6   dep_delay       328521 non-null  float64
+16.4s	28	 7   arr_time        328063 non-null  float64
+16.4s	29	 8   sched_arr_time  336776 non-null  int64  
+16.4s	30	 9   arr_delay       327346 non-null  float64
+16.4s	31	 10  carrier         336776 non-null  object 
+16.4s	32	 11  flight          336776 non-null  int64  
+16.4s	33	 12  tailnum         334264 non-null  object 
+16.4s	34	 13  origin          336776 non-null  object 
+16.4s	35	 14  dest            336776 non-null  object 
+16.4s	36	 15  air_time        327346 non-null  float64
+16.4s	37	 16  distance        336776 non-null  int64  
+16.4s	38	 17  hour            336776 non-null  int64  
+16.4s	39	 18  minute          336776 non-null  int64  
+16.4s	40	 19  time_hour       336776 non-null  object 
+16.4s	41	 20  name            336776 non-null  object 
+16.4s	42	dtypes: float64(5), int64(10), object(6)
+16.4s	43	memory usage: 54.0+ MB
+108.2s	44	Missing Value Percentage by Columns:
+108.2s	45	 arr_delay         2.80
+108.2s	46	air_time          2.80
+108.2s	47	arr_time          2.59
+108.2s	48	dep_time          2.45
+108.2s	49	dep_delay         2.45
+108.2s	50	month             0.00
+108.2s	51	day               0.00
+108.2s	52	sched_dep_time    0.00
+108.2s	53	sched_arr_time    0.00
+108.2s	54	origin            0.00
+108.2s	55	dest              0.00
+108.2s	56	distance          0.00
+108.2s	57	name              0.00
+108.2s	58	dtype: float64
+110.8s	59	
+110.8s	60	Distribution of categories in origin:
+110.8s	61	EWR    117127
+110.8s	62	JFK    109079
+110.8s	63	LGA    101140
+110.8s	64	Name: origin, dtype: int64
+110.8s	65	
+110.8s	66	Distribution of categories in dest:
+110.8s	67	ATL    16837
+110.8s	68	ORD    16566
+110.8s	69	LAX    16026
+110.8s	70	BOS    15022
+110.8s	71	MCO    13967
+110.8s	72	       ...  
+110.8s	73	HDN       14
+110.8s	74	MTJ       14
+110.8s	75	SBN       10
+110.8s	76	ANC        8
+110.8s	77	LEX        1
+110.8s	78	Name: dest, Length: 104, dtype: int64
+110.8s	79	
+110.8s	80	Distribution of categories in name:
+110.8s	81	United Air Lines Inc.          57782
+110.8s	82	JetBlue Airways                54049
+110.8s	83	ExpressJet Airlines Inc.       51108
+110.8s	84	Delta Air Lines Inc.           47658
+110.8s	85	American Airlines Inc.         31947
+110.8s	86	Envoy Air                      25037
+110.8s	87	US Airways Inc.                19831
+110.8s	88	Endeavor Air Inc.              17294
+110.8s	89	Southwest Airlines Co.         12044
+110.8s	90	Virgin America                  5116
+110.8s	91	AirTran Airways Corporation     3175
+110.8s	92	Alaska Airlines Inc.             709
+110.8s	93	Frontier Airlines Inc.           681
+110.8s	94	Mesa Airlines Inc.               544
+110.8s	95	Hawaiian Airlines Inc.           342
+110.8s	96	SkyWest Airlines Inc.             29
+110.8s	97	Name: name, dtype: int64
+128.0s	98	<class 'pandas.core.frame.DataFrame'>
+128.0s	99	RangeIndex: 327346 entries, 0 to 327345
+128.0s	100	Data columns (total 31 columns):
+128.0s	101	 #   Column                         Non-Null Count   Dtype  
+128.0s	102	---  ------                         --------------   -----  
+128.0s	103	 0   month                          327346 non-null  float64
+128.0s	104	 1   day                            327346 non-null  float64
+128.0s	105	 2   dep_delay                      327346 non-null  float64
+128.0s	106	 3   dest                           327346 non-null  float64
+128.0s	107	 4   air_time                       327346 non-null  float64
+128.0s	108	 5   distance                       327346 non-null  float64
+128.0s	109	 6   origin_JFK                     327346 non-null  uint8  
+128.0s	110	 7   origin_LGA                     327346 non-null  uint8  
+128.0s	111	 8   name_Alaska Airlines Inc.      327346 non-null  uint8  
+128.0s	112	 9   name_American Airlines Inc.    327346 non-null  uint8  
+128.0s	113	 10  name_Delta Air Lines Inc.      327346 non-null  uint8  
+128.0s	114	 11  name_Endeavor Air Inc.         327346 non-null  uint8  
+128.0s	115	 12  name_Envoy Air                 327346 non-null  uint8  
+128.0s	116	 13  name_ExpressJet Airlines Inc.  327346 non-null  uint8  
+128.0s	117	 14  name_Frontier Airlines Inc.    327346 non-null  uint8  
+128.0s	118	 15  name_Hawaiian Airlines Inc.    327346 non-null  uint8  
+128.0s	119	 16  name_JetBlue Airways           327346 non-null  uint8  
+128.0s	120	 17  name_Mesa Airlines Inc.        327346 non-null  uint8  
+128.0s	121	 18  name_SkyWest Airlines Inc.     327346 non-null  uint8  
+128.0s	122	 19  name_Southwest Airlines Co.    327346 non-null  uint8  
+128.0s	123	 20  name_US Airways Inc.           327346 non-null  uint8  
+128.0s	124	 21  name_United Air Lines Inc.     327346 non-null  uint8  
+128.0s	125	 22  name_Virgin America            327346 non-null  uint8  
+128.0s	126	 23  dep_time_sin                   327346 non-null  float64
+128.0s	127	 24  dep_time_cos                   327346 non-null  float64
+128.0s	128	 25  sched_dep_time_sin             327346 non-null  float64
+128.0s	129	 26  sched_dep_time_cos             327346 non-null  float64
+128.0s	130	 27  arr_time_sin                   327346 non-null  float64
+128.0s	131	 28  arr_time_cos                   327346 non-null  float64
+128.0s	132	 29  sched_arr_time_sin             327346 non-null  float64
+128.0s	133	 30  sched_arr_time_cos             327346 non-null  float64
+128.0s	134	dtypes: float64(14), uint8(17)
+128.0s	135	memory usage: 40.3 MB
+132.2s	136	/opt/conda/lib/python3.10/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+132.2s	137	  warn(
+132.2s	138	[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+132.2s	139	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+132.9s	140	[NbConvertApp] Writing 4184456 bytes to __notebook__.ipynb
+134.7s	141	/opt/conda/lib/python3.10/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+134.7s	142	  warn(
+134.7s	143	[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+134.8s	144	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+136.2s	145	[NbConvertApp] Support files will be in __results___files/
+136.2s	146	[NbConvertApp] Making directory __results___files
+136.2s	147	[NbConvertApp] Making directory __results___files
+136.2s	148	[NbConvertApp] Making directory __results___files
+136.2s	149	[NbConvertApp] Making directory __results___files
+136.2s	150	[NbConvertApp] Making directory __results___files
+136.2s	151	[NbConvertApp] Making directory __results___files
+136.2s	152	[NbConvertApp] Making directory __results___files
+136.2s	153	[NbConvertApp] Making directory __results___files
+136.2s	154	[NbConvertApp] Making directory __results___files
+136.2s	155	[NbConvertApp] Making directory __results___files
+136.2s	156	[NbConvertApp] Making directory __results___files
+136.2s	157	[NbConvertApp] Making directory __results___files
+136.2s	158	[NbConvertApp] Making directory __results___files
+136.2s	159	[NbConvertApp] Making directory __results___files
+136.2s	160	[NbConvertApp] Making directory __results___files
+136.2s	161	[NbConvertApp] Making directory __results___files
+136.2s	162	[NbConvertApp] Making directory __results___files
+136.2s	163	[NbConvertApp] Making directory __results___files
+136.2s	164	[NbConvertApp] Making directory __results___files
+136.2s	165	[NbConvertApp] Making directory __results___files
+136.2s	166	[NbConvertApp] Making directory __results___files
+136.2s	167	[NbConvertApp] Making directory __results___files
+136.2s	168	[NbConvertApp] Making directory __results___files
+136.2s	169	[NbConvertApp] Making directory __results___files
+136.2s	170	[NbConvertApp] Making directory __results___files
+136.2s	171	[NbConvertApp] Making directory __results___files
+136.2s	172	[NbConvertApp] Making directory __results___files
+136.2s	173	[NbConvertApp] Making directory __results___files
+136.2s	174	[NbConvertApp] Making directory __results___files
+136.2s	175	[NbConvertApp] Making directory __results___files
+136.2s	176	[NbConvertApp] Making directory __results___files
+136.2s	177	[NbConvertApp] Making directory __results___files
+136.2s	178	[NbConvertApp] Making directory __results___files
+136.2s	179	[NbConvertApp] Making directory __results___files
+136.2s	180	[NbConvertApp] Making directory __results___files
+136.2s	181	[NbConvertApp] Making directory __results___files
+136.2s	182	[NbConvertApp] Making directory __results___files
+136.2s	183	[NbConvertApp] Writing 491067 bytes to __results__.html
